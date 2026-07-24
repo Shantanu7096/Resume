@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shantanu Patil - Data Scientist Resume</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* General Reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Times New Roman', Times, serif; /* ATS Requirement */
+            background-color: #525659;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            color: #000;
+        }
+
+        /* A4 Paper Styling - Strict 1 Page Fit */
+        .resume-sheet {
+            background-color: white;
+            width: 210mm;
+            height: 297mm; /* Fixed A4 Height */
+            padding: 25px 35px; /* Tighter margins to fit content */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden; /* Prevent spillover */
+        }
+
+        /* Download Button */
+        .download-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-family: sans-serif;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .download-btn:hover { background-color: #1a252f; }
+
+        /* Typography & Layout */
+        h1 {
+            font-size: 24px; /* Slightly smaller to save space */
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 3px;
+        }
+        
+        .contact-info span {
+            margin: 0 3px;
+        }
+
+        .section-title {
+            font-size: 14px; /* Reduced */
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+            margin-top: 10px; /* Tighter spacing */
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .content-block {
+            margin-bottom: 8px; /* Tighter spacing */
+        }
+
+        .block-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .block-subtitle {
+            font-style: italic;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        .summary-text {
+            text-align: justify;
+            font-size: 12.5px;
+            line-height: 1.3;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 12.5px;
+            line-height: 1.35;
+        }
+
+        li {
+            margin-bottom: 2px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 120px auto;
+            gap: 2px;
+            font-size: 12.5px;
+            margin-bottom: 3px;
+        }
+        
+        .skill-category {
+            font-weight: bold;
+        }
+
+        /* Print Settings */
+        @media print {
+            @page { size: A4; margin: 0; }
+            body { background: none; padding: 0; }
+            .resume-sheet { box-shadow: none; width: 100%; height: 100%; margin: 0; padding: 25px 35px; }
+            .download-btn { display: none; }
+            a { text-decoration: none; color: #000; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-sheet">
+        <button onclick="window.print()" class="download-btn">Download PDF</button>
+
+        <!-- Header -->
+        <header>
+            <h1>Shantanu Keraba Patil</h1>
+            <div class="contact-info">
+                <span><strong>Data Scientist</strong></span> <br>
+                <span>Kolhapur, Maharashtra</span> |
+                <span>+91 7030517096</span> |
+                <a href="mailto:skpatil6396@gmail.com" style="color: #0056b3;">skpatil6396@gmail.com</a> <br>
+                <a href="https://www.linkedin.com/in/shantanu-keraba-patil-168450289" target="_blank" style="color: #0056b3;">LinkedIn</a> |
+                <a href="https://github.com/Shantanu7096" target="_blank" style="color: #0056b3;">github.com/Shantanu7096</a> |
+                <a href="https://leetcode.com/Shantanu7096" target="_blank" style="color: #0056b3;">LeetCode</a>
+            </div>
+        </header>
+
+        <!-- Objective Summary -->
+        <div class="section-title">Objective Summary</div>
+        <p class="summary-text">
+            Motivated <strong>Data Science beginner</strong> and Computer Science student with a foundational understanding of Python, predictive modeling, and data analytics. Seeking an entry-level opportunity to apply academic learning and internship experience in building regression, classification, and computer vision models to real-world challenges. I bring a strong work ethic, eagerness to learn, and proficiency in Scikit-Learn and data preprocessing to contribute effectively to a data-driven team.
+        </p>
+
+        <!-- Technical Skills -->
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category">Languages:</div>
+            <div>Python, SQL (MySQL), C, C++, Java</div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">Data Science:</div>
+            <div>Regression, Classification, Computer Vision, Data Preprocessing</div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">Networking:</div>
+            <div>TCP/IP, DNS, DHCP, Ethernet Troubleshooting</div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">Libraries:</div>
+            <div>Scikit-Learn, TensorFlow, Pandas, NumPy, Matplotlib, OpenCV</div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">Tools:</div>
+            <div>GitHub, VS Code, Google Colab, Jupyter Notebook, Excel, Tableau</div>
+        </div>
+
+        <!-- Experience (Reverse Chronology) -->
+        <div class="section-title">Internship Experience</div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span><a href="https://drive.google.com/file/d/1TnWvmwyTXux8p5266z4jU4Ra62Dc3VsO/view?usp=sharing" target="_blank" style="text-decoration: underline; color: inherit;">Generative AI & Agentic System Engineering Intern</a></span>
+                <span>June 2026 – July 2026</span>
+            </div>
+            <div class="block-subtitle">Lenovo - Bharat Cares</div>
+            <ul>
+                <li><strong>Engineered</strong> agentic workflows using Generative AI models to automate and optimize data-driven tasks.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span><a href="https://drive.google.com/file/d/1-7cFFfWJ9Opwht8tVKNiUedfsDxLM_Ea/view?usp=sharing" target="_blank" style="text-decoration: underline; color: inherit;">IoT Intern</a></span>
+                <span>June 2026 – July 2026</span>
+            </div>
+            <div class="block-subtitle">Shantilal and Son's</div>
+            <ul>
+                <li><strong>Designed</strong> and integrated hardware sensors with Python-based backend systems for real-time data collection and analysis.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span><a href="https://drive.google.com/file/d/1h9_Qh6ozhdjYJXN1rfYhq34ejaMSoZP9/view?usp=sharing" target="_blank" style="text-decoration: underline; color: inherit;">Networking Intern</a></span>
+                <span>Oct 2025 – Nov 2025</span>
+            </div>
+            <div class="block-subtitle">Shivaji University, Kolhapur</div>
+            <ul>
+                <li><strong>Maintained</strong> physical layer connectivity, resolving complex DNS and IP configuration issues for university departments.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span><a href="https://drive.google.com/file/d/1L13OiKqPQb9WTltoujtOpjPwT2NM0ZRe/view?usp=sharing" target="_blank" style="text-decoration: underline; color: inherit;">Machine Learning Intern</a></span>
+                <span>July 2025 – Sept 2025</span>
+            </div>
+            <div class="block-subtitle">SmartBridge - SkillsInternz</div>
+            <ul>
+                <li><strong>Utilized</strong> Pandas and NumPy to clean and preprocess datasets for advanced analysis.</li>
+                <li><strong>Engineered</strong> predictive models using regression and classification algorithms to identify data trends.</li>
+            </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="section-title">Key Projects</div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span>SpecTantra AI: Ultra-Low-Cost Smartphone Spectrometry</span>
+                <span>July 2026 – Present</span>
+            </div>
+            <div class="block-subtitle">Python, OpenCV, Computer Vision (Ongoing)</div>
+            <ul>
+                <li><strong>Engineered</strong> a low-cost computer-vision system utilizing Python and OpenCV to analyze light spectrums for instant soil and fertilizer diagnostics via smartphone camera streams.</li>
+                <li><strong>Implemented</strong> real-time data processing algorithms to calculate N-P-K nutrient deficiencies and detect chemical adulteration based on specific color absorption profiles.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span><a href="https://github.com/Shantanu7096/Smart_Agriculture_Chatbot" target="_blank" style="color:black; text-decoration:none;">Smart Agriculture Chatbot</a></span>
+                <span>July 2026 – Present</span>
+            </div>
+            <ul>
+                <li><strong>Developed</strong> an AI-driven NLP chatbot aimed at assisting users with modern agricultural queries and data delivery.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span><a href="https://github.com/Shantanu7096/MediMind-AI" target="_blank" style="color:black; text-decoration:none;">MediMind-AI</a></span>
+                <span>July 2026 – Present</span>
+            </div>
+            <ul>
+                <li><strong>Constructed</strong> a healthcare-focused AI application integrating predictive insights and responsive user assistance.</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span><a href="https://github.com/Shantanu7096/Employee-Performance-Prediction" target="_blank" style="color:black; text-decoration:none;">Employees Performance Prediction</a></span>
+                <span>2025</span>
+            </div>
+            <ul>
+                <li><strong>Utilized</strong> Scikit-Learn to build an ML model predicting employee metrics, identifying KPIs via rigorous EDA.</li>
+            </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="section-title">Education</div>
+        
+        <div class="content-block">
+            <div class="block-header">
+                <span>B.Tech in Computer Science and Engineering (Third Year - CGPA: 7.09)</span>
+                <span>2023 – Present</span>
+            </div>
+            <div class="block-subtitle">Shivaji University, Kolhapur</div>
+        </div>
+
+        <div class="content-block">
+            <div class="block-header">
+                <span>Higher Secondary Certificate (HSC) - 69.17%</span>
+                <span>2021 – 2023</span>
+            </div>
+            <div class="block-subtitle">Kisanrao More College, Sarawade, Kolhapur</div>
+        </div>
+
+        <!-- Certifications & Extra-Curricular -->
+        <div class="section-title">Certifications & Extra-Curricular</div>
+        <ul>
+            <li><strong>Completed Course:</strong> <a href="https://drive.google.com/file/d/1HpM6vmdkkagD9Y8AD4TflkmRwn1gprSd/view?usp=sharing" target="_blank" style="text-decoration: underline; color: inherit;">Artificial Intelligence Certification</a>.</li>
+            <li><strong>Presented Paper:</strong> Srushti Sanjivan Conference (2025) - <a href="https://drive.google.com/file/d/1R-U4e9ew5RFCT9pqUawPCJmxj6cQ0OcF/view?usp=sharing" target="_blank" style="text-decoration: underline; color: inherit;"><em>Poster Presentation</em></a>.</li>
+            <li><strong>Participated:</strong> <a href="https://drive.google.com/file/d/1iedevGDiHSv4aX5SfO99ZjNg79iOloTH/view?usp=sharing" target="_blank" style="text-decoration: underline; color: inherit;">Hackathons</a> focused on coding solutions.</li>
+            <li><strong>Volunteer & Leader:</strong> Campus Drive Volunteer (Infosys Pool Drive) & Team Coordinator (Anvenshna Event).</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
